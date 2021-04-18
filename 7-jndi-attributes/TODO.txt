@@ -1,1 +1,0 @@
-TODO: try to run @SpringBootApplication with DispatcherServlet on embedded Tomcat and set JNDI attributes
