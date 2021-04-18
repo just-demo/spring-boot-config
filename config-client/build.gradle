@@ -1,0 +1,28 @@
+dependencies {
+	implementation 'org.springframework.cloud:spring-cloud-starter-config'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.cloud:spring-cloud-bus'
+	implementation 'org.springframework.cloud:spring-cloud-stream-binder-rabbit'
+	// Discovery First Bootstrap only
+	// implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	// implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
+}
+
+def properties = [buildVersion: new Date().format("yyyy-MM-dd HH:mm:ss.SSS")]
+processResources {
+	// this is not specific to Spring
+	expand properties
+}
+
+// Replaces @buildVersion@
+//import org.apache.tools.ant.filters.ReplaceTokens
+//
+//processResources {
+//    outputs.upToDateWhen { false }
+//    filter(ReplaceTokens, tokens: properties)
+//}
+//task printProperties {
+//	doLast {
+//		println properties
+//	}
+//}

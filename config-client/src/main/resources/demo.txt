@@ -1,0 +1,5 @@
+Hello ${buildVersion}
+Hello \${buildVersion}
+Hello ${ buildVersion }
+Hello ${abc}
+Hello \$ {abc}
