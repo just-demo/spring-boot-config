@@ -13,6 +13,7 @@ import static java.util.Collections.singletonMap;
 
 @RestController
 public class CustomConfigServerController {
+    // See mappings: org.springframework.cloud.config.server.resource.ResourceController
     @GetMapping({"/{name}/{profile}", "/{name}/{profile}/{label}"})
     public Environment environment(
             @PathVariable("name") String name,
