@@ -1,9 +1,11 @@
+##################### REDIS ######################
 docker ps
 docker exec -it <container> sh
 redis-cli ping
+cat data.txt | redis-cli --pipe
 
 redis-cli hmset config-client demo.value "REDIS-DEFAULT"
 redis-cli hmset config-client-dev demo.value "REDIS-DEV"
-
 redis-cli hmget config-client demo.value
 redis-cli hmget config-client-dev demo.value
+##################################################
