@@ -29,6 +29,6 @@ public class CustomConfigServerController {
     }
 
     private PropertySource propertySource(String profile) {
-        return new PropertySource("custom-" + profile, singletonMap("demo.value", profile.toUpperCase()));
+        return new PropertySource("custom-" + profile, singletonMap("demo.value", "CUSTOM-" + profile.toUpperCase()));
     }
 }
