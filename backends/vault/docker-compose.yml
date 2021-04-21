@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  vault:
+    image: vault
+    ports:
+      - 8200:8200
+    volumes:
+      - ./init.sh:/data/init.sh
+#    command: sh -c "redis-server --daemonize yes && sleep 5 && /data/init.sh && tail -f /dev/null"
+    environment:
+      - --cap-add=IPC_LOCK
+      - VAULT_DEV_ROOT_TOKEN_ID=demo
