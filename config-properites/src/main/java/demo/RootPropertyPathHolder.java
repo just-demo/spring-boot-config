@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties
 public class RootPropertyPathHolder {
     private String nodots;
-    private Spring spring;
+    private Demo demo;
 
     public String getNodots() {
         return nodots;
@@ -17,35 +17,23 @@ public class RootPropertyPathHolder {
         this.nodots = nodots;
     }
 
-    public Spring getSpring() {
-        return spring;
+    public Demo getDemo() {
+        return demo;
     }
 
-    public void setSpring(Spring spring) {
-        this.spring = spring;
+    public void setDemo(Demo demo) {
+        this.demo = demo;
     }
 
-    public static class Spring {
-        Application application;
+    public static class Demo {
+        String value;
 
-        public Application getApplication() {
-            return application;
+        public String getValue() {
+            return value;
         }
 
-        public void setApplication(Application application) {
-            this.application = application;
-        }
-    }
-
-    public static class Application {
-        String name;
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
+        public void setValue(String value) {
+            this.value = value;
         }
     }
 }
