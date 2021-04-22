@@ -34,9 +34,13 @@ public class ConfigPropertiesController {
     @Autowired
     private DemoBean bean12;
 
+    @Autowired
+    private RootPropertyPathHolder rootPropertyPathHolder;
+
     @GetMapping("beans")
     public List<Object> beans() {
         return asList(
+                rootPropertyPathHolder,
                 bean0, bean1, bean2, bean12,
                 environment.getProperty("demo.value12"));
     }
