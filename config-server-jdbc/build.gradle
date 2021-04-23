@@ -1,5 +1,5 @@
 dependencies {
     implementation 'org.springframework.cloud:spring-cloud-config-server'
-    implementation 'org.springframework:spring-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
     runtimeOnly 'com.h2database:h2'
 }
