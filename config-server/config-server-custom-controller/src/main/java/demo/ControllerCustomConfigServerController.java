@@ -12,15 +12,15 @@ import static java.util.Arrays.asList;
 import static java.util.Collections.singletonMap;
 
 @RestController
-public class CustomConfigServerController {
+public class ControllerCustomConfigServerController {
     // See mappings: org.springframework.cloud.config.server.resource.ResourceController
-    @GetMapping({"/{name}/{profile}", "/{name}/{profile}/{label}"})
+    @GetMapping({"/{application}/{profile}", "/{application}/{profile}/{label}"})
     public Environment environment(
-            @PathVariable("name") String name,
+            @PathVariable("application") String application,
             @PathVariable("profile") String profile,
             @PathVariable(value = "label", required = false) String label
     ) {
-        Environment environment = new Environment(name, new String[]{profile}, label, null, null);
+        Environment environment = new Environment(application, new String[]{profile}, label, null, null);
         new LinkedHashSet<>(asList(profile, "default"))
                 .stream()
                 .map(this::propertySource)
