@@ -12,6 +12,8 @@ import static java.util.Arrays.asList;
 
 @RestController
 public class ConfigPropertiesController {
+    @Autowired
+    private DemoMap demoMap;
 
     @Autowired
     private Config config;
@@ -40,6 +42,7 @@ public class ConfigPropertiesController {
     @GetMapping("beans")
     public List<Object> beans() {
         return asList(
+                demoMap,
                 rootPropertyPathHolder,
                 bean0, bean1, bean2, bean12,
                 environment.getProperty("demo.value12"));
