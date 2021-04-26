@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @ConfigurationProperties("demo")
-public class Config {
+public class Demo {
     private String value;
 
     public String getValue() {

@@ -1,6 +1,6 @@
 rootProject.name = 'spring-boot-config'
-include 'config-client'
-include 'config-client-refreshable'
+include 'config-client:simple'
+include 'config-client:refreshable'
 include 'config-properites'
 include 'config-server:config-server-custom'
 include 'config-server:config-server-git'

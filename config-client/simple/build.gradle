@@ -1,0 +1,17 @@
+dependencies {
+    implementation 'org.springframework.cloud:spring-cloud-starter-config'
+}
+
+//def properties = [buildVersion: new Date().format("yyyy-MM-dd HH:mm:ss.SSS")]
+//processResources {
+//	// this is not specific to Spring
+//	expand properties
+//}
+//
+//// Replaces @buildVersion@
+//import org.apache.tools.ant.filters.ReplaceTokens
+//
+//processResources {
+//    outputs.upToDateWhen { false }
+//    filter(ReplaceTokens, tokens: properties)
+//}
