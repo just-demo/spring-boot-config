@@ -5,17 +5,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 @ConfigurationProperties
-public class RootPropertyPathHolder {
-    private String nodots;
+public class DemoNoPrefix {
     private Demo demo;
-
-    public String getNodots() {
-        return nodots;
-    }
-
-    public void setNodots(String nodots) {
-        this.nodots = nodots;
-    }
 
     public Demo getDemo() {
         return demo;
