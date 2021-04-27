@@ -22,6 +22,9 @@ public class PropertyConsumerController {
     private DemoMap demoMap;
 
     @Autowired
+    private DemoMethod demoMethod;
+
+    @Autowired
     private Environment environment;
 
     @Value("${demo.value}")
@@ -34,6 +37,7 @@ public class PropertyConsumerController {
                 demoPrefix,
                 demoNoPrefix,
                 demoMap,
+                demoMethod,
                 environment.getProperty("demo.value"),
                 value);
     }
