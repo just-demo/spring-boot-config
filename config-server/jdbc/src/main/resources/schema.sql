@@ -5,3 +5,9 @@ create table PROPERTIES (
   KEY varchar(100),
   VALUE varchar(100)
 );
+
+create table CUSTOM (
+  APP varchar(100),
+  NAME varchar(100),
+  VAL varchar(100)
+);

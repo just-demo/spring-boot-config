@@ -9,3 +9,6 @@ values ('config-client', 'default', 'demo-label', 'demo.value', 'JDBC-DEFAULT-LA
 
 insert into PROPERTIES (APPLICATION, PROFILE, LABEL, KEY, VALUE)
 values ('config-client', 'dev', 'demo-label', 'demo.value', 'JDBC-DEV-LABEL');
+
+insert into CUSTOM (APP, NAME, VAL)
+values ('config-client', 'demo.value', 'JDBC-CUSTOM');
