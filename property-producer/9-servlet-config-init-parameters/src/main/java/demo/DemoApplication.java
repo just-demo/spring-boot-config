@@ -9,7 +9,7 @@ import org.springframework.boot.web.embedded.tomcat.TomcatWebServer;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class DemoApplication9 {
+public class DemoApplication {
     @Bean
     public TomcatServletWebServerFactory tomcatServletWebServerFactory() {
         return new TomcatServletWebServerFactory() {
@@ -27,6 +27,6 @@ public class DemoApplication9 {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication9.class, args);
+        SpringApplication.run(DemoApplication.class, args);
     }
 }
