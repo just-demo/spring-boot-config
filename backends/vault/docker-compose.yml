@@ -6,7 +6,7 @@ services:
       - 8200:8200
     volumes:
       - ./init.sh:/data/init.sh
-#    command: sh -c "redis-server --daemonize yes && sleep 5 && /data/init.sh && tail -f /dev/null"
+#    command: TODO: implement
     environment:
       - --cap-add=IPC_LOCK
       - VAULT_DEV_ROOT_TOKEN_ID=demo
