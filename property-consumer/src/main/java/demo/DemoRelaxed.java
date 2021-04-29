@@ -6,49 +6,58 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties
 public class DemoRelaxed {
-    private String demoValue1;
-    private String demoValue2;
-    private String demoValue3;
-    private String demoValue4;
-    private String demoValue5;
+    private String relaxedValue1;
+    private String relaxedValue2;
+    private String relaxedValue3;
+    private String relaxedValue4;
+    private String relaxedValue5;
+    private String relaxedValue6;
 
-    public String getDemoValue1() {
-        return demoValue1;
+    public String getRelaxedValue1() {
+        return relaxedValue1;
     }
 
-    public void setDemoValue1(String demoValue1) {
-        this.demoValue1 = demoValue1;
+    public void setRelaxedValue1(String relaxedValue1) {
+        this.relaxedValue1 = relaxedValue1;
     }
 
-    public String getDemoValue2() {
-        return demoValue2;
+    public String getRelaxedValue2() {
+        return relaxedValue2;
     }
 
-    public void setDemoValue2(String demoValue2) {
-        this.demoValue2 = demoValue2;
+    public void setRelaxedValue2(String relaxedValue2) {
+        this.relaxedValue2 = relaxedValue2;
     }
 
-    public String getDemoValue3() {
-        return demoValue3;
+    public String getRelaxedValue3() {
+        return relaxedValue3;
     }
 
-    public void setDemoValue3(String demoValue3) {
-        this.demoValue3 = demoValue3;
+    public void setRelaxedValue3(String relaxedValue3) {
+        this.relaxedValue3 = relaxedValue3;
     }
 
-    public String getDemoValue4() {
-        return demoValue4;
+    public String getRelaxedValue4() {
+        return relaxedValue4;
     }
 
-    public void setDemoValue4(String demoValue4) {
-        this.demoValue4 = demoValue4;
+    public void setRelaxedValue4(String relaxedValue4) {
+        this.relaxedValue4 = relaxedValue4;
     }
 
-    public String getDemoValue5() {
-        return demoValue5;
+    public String getRelaxedValue5() {
+        return relaxedValue5;
     }
 
-    public void setDemoValue5(String demoValue5) {
-        this.demoValue5 = demoValue5;
+    public void setRelaxedValue5(String relaxedValue5) {
+        this.relaxedValue5 = relaxedValue5;
+    }
+
+    public String getRelaxedValue6() {
+        return relaxedValue6;
+    }
+
+    public void setRelaxedValue6(String relaxedValue6) {
+        this.relaxedValue6 = relaxedValue6;
     }
 }
