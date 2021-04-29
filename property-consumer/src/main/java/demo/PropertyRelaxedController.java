@@ -17,17 +17,17 @@ public class PropertyRelaxedController {
     @Autowired
     private DemoRelaxed demoRelaxed;
 
-    @Value("${relaxed.value1:}")
+    @Value("${relaxed-value1:}")
     private String value11;
-    @Value("${relaxed.value2:}")
+    @Value("${relaxed-value2:}")
     private String value21;
-    @Value("${relaxed.value3:}")
+    @Value("${relaxed-value3:}")
     private String value31;
-    @Value("${relaxed.value4:}")
+    @Value("${relaxed-value4:}")
     private String value41;
-    @Value("${relaxed.value5:}")
+    @Value("${relaxed-value5:}")
     private String value51;
-    @Value("${relaxed.value6:}")
+    @Value("${relaxed-value6:}")
     private String value61;
 
     @GetMapping
@@ -38,7 +38,8 @@ public class PropertyRelaxedController {
                 value21,
                 value31,
                 value41,
-                value51
+                value51,
+                value61
         );
     }
 }
