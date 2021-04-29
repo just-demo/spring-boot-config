@@ -1,7 +1,0 @@
-1) Go to https://www.visualsvn.com/server/download/
-2) Download and install VISUAL SVN SERVER, select Standard during installation
-3) VisualSVN Server -> Repositories -> right click -> Create New Repository... -> Regular FSFS repository -> Next -> type "demo" as Repository Name -> Next -> Empty Repository -> Next -> All Subversion users have Read / Write access -> Create -> Finish
-4) VisualSVN Server -> Users -> right click -> Create User... -> type demo/demo -> OK
-5) VisualSVN Server -> Repositories -> demo -> right click -> Copy URL to Clipboard -> Checkout copied URL (i.e. https://DESKTOP-<NAME>/svn/demo) in IDE as "demo" project
-6) Copy contents of checkin-to-svn folder to the "demo" project (i.e. demo/trunk/... and demo/demo-label/...) and checkin the files
-7) Replace value of spring.cloud.config.server.svn.uri with copied URL
